@@ -1,0 +1,258 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Keep it above other elements */
+  padding: 10px 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(51, 33, 55);
+    /* overflow: hidden; */
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(101, 93, 93, 0.486);
+}
+
+li{
+/* float: left; */
+text-align: center;
+display: inline-block;
+font-size: 1rem ;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+li a{
+    text-decoration: none;
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    
+}
+
+.active{
+    background-color: rgb(71, 49, 120);
+}
+
+li a:hover{
+    background-color: rgb(71, 49, 120);
+}
+
+.Service{
+    /* float: left;
+    overflow: hidden; */
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+/* Age counter section */
+
+.testArea {
+    margin: 0;
+    height: auto;
+    text-align: center;
+    padding: 2rem;
+    background-color: antiquewhite;
+    background-image: url(/image/eshalbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+#demo{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-size: 5rem;
+    font-weight: 800;
+    padding: 10px 10px ;
+    color: #ffffff;
+    text-shadow: 0 4px 20px #031d39;
+}
+
+button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+.age-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px) scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  .age-box {
+    background-color: rgba(255, 255, 255, 0.47);
+    padding: 20px;
+    width: 7rem;
+    height: 8rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* smooth shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(5px); /* adds glassy blur behind */
+    
+    animation: fadeInUp 0.8s ease forwards;
+    opacity: 0; /* hide initially for animation */
+  }
+
+  .age-box:hover {
+    background-color: rgba(33, 17, 67, 0.758);
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(2, 59, 117, 0.5); /* blue glow */
+    cursor: pointer;
+  }
+
+  .age-value {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #333;
+    padding: 20px;
+  }
+
+  
+  .age-box-seconds {
+    color: #ffffff;
+    background-color: rgba(33, 17, 67, 0.758);
+    padding: 20px;
+    width: 7rem;
+    height: 8rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* smooth shadow */
+    border-style:double;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(5px); /* adds glassy blur behind */
+    animation: fadeInUp 0.8s ease forwards;
+    opacity: 0; /* hide initially for animation */
+  }
+
+  .age-value-seconds{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 20px;
+  }
+
+  .age-label-seconds{
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-weight: 700;
+  }
+
+  .age-box:hover .age-value {
+    color: #ffffff;
+    text-shadow: 0 0 1px #031d39;
+    
+  }
+
+  .age-label {
+    font-size: 1.2rem;
+    color: #272727;
+    font-weight: 700;
+  }
+  .age-box:hover .age-label {
+    color: #ffffff;
+    text-shadow: 0 0 1px #141617;
+  }
+
+  #agebtn{
+    width: 20rem;
+    padding: 15px;
+    margin: 80px 30px;
+    font-size: 1rem;
+    color: #eeeeee;
+    background-color: rgb(111, 23, 158);
+    box-shadow: 1px 1px 8px rgb(21, 14, 36);
+  }
+
+
+
+
+
+
+
+/* Gallery Area */
+
+.Gallery{
+  display: block;
+  text-align: center;
+  background-color: rgb(248, 227, 250);
+  padding: 3rem;
+
+    margin: 0;
+    height: auto;
+    text-align: center;
+    padding: 2rem;
+    background-color: antiquewhite;
+    background-image: url(/image/gallarybg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+.Gallery h2 {
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+font-size: 5rem;
+font-weight: 800;
+padding: 10px 10px ;
+color: #ffffff;
+text-shadow: 0 4px 20px #031d39;
+ 
+}
+
+.photocard{
+  text-align: center;
+  width: 17rem;
+  height: 20%;
+  background-color: rgb(111, 23, 158);
+  color: white;
+  font-size: larger;
+  margin: 1rem;
+  display: inline-block;
+  box-shadow: 0px 3px 10px rgb(50, 34, 84);
+}
+
+.photocard:hover {
+  background-color: rgb(80, 15, 114);
+  box-shadow: 4px 4px 7px rgb(50, 34, 84);
+  transform: translateY(-10px);
+}
+
+.photocard img{
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.photocard:hover img {
+  transform: translateY(-10px);
+}
