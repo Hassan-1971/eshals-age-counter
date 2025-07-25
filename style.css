@@ -64,7 +64,7 @@ li a:hover{
     text-align: center;
     padding: 2rem;
     background-color: antiquewhite;
-    background-image: url(/image/eshalbg.png);
+    background-image: url(image/eshalbg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -212,7 +212,7 @@ button {
     text-align: center;
     padding: 2rem;
     background-color: antiquewhite;
-    background-image: url(/image/gallarybg.jpg);
+    background-image: url(image/gallarybg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
